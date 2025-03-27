@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "My0PuPDIPFuDyBYliki+iELqLLef5jCscR5JrpvEmx6hz27VGlkIQtx2rCdCJFwxuwtTShz9ZriWahRqhAGGBg==",
+  "success": true,
+  "projectFilePath": "C:\\ProyectosNet2025\\RentCar\\src\\RentCar.Domain\\RentCar.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

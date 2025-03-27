@@ -1,0 +1,11 @@
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\bin\Debug\net8.0\RentCar.Domain.deps.json
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\bin\Debug\net8.0\RentCar.Domain.dll
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\bin\Debug\net8.0\RentCar.Domain.pdb
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.AssemblyInfoInputs.cache
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.AssemblyInfo.cs
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.csproj.CoreCompileInputs.cache
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.dll
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\refint\RentCar.Domain.dll
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.pdb
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\ref\RentCar.Domain.dll
