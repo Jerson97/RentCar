@@ -9,3 +9,5 @@ C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.d
 C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\refint\RentCar.Domain.dll
 C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.pdb
 C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\ref\RentCar.Domain.dll
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.csproj.AssemblyReference.cache
+C:\ProyectosNet2025\RentCar\src\RentCar.Domain\obj\Debug\net8.0\RentCar.Domain.sourcelink.json

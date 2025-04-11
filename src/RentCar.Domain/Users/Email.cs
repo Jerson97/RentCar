@@ -1,3 +1,3 @@
-namespace RentCar.Domain.User;
+namespace RentCar.Domain.Users;
 
 public record Email(string Value);

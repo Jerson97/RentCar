@@ -1,4 +1,4 @@
-using RentCar.Domain.User;
+using RentCar.Domain.Users;
 
 namespace RentCar.Domain.Abstractions;
 
