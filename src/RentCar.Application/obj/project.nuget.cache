@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zQ+Rkm0+/ZmkyEp7KlG24g8iqLRFhm/sD38DniLIj3mWNk0jYGrk2aWP869mIeVtj7rYeJ2T+4CUpzdg4rRRTA==",
+  "success": true,
+  "projectFilePath": "C:\\ProyectosNet2025\\RentCar\\src\\RentCar.Application\\RentCar.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\USUARIO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

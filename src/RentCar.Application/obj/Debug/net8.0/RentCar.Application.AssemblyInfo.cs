@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("RentCar.Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RentCar.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a62267ff3a8cf7e2e9778990830c53ec75f571")]
-[assembly: System.Reflection.AssemblyProductAttribute("RentCar.Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("RentCar.Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("RentCar.Application")]
+[assembly: System.Reflection.AssemblyTitleAttribute("RentCar.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

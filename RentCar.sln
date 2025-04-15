@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E220435-BCF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCar.Domain", "src\RentCar.Domain\RentCar.Domain.csproj", "{08C49F59-0FCD-4DBE-9FB7-4A3A3253978B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentCar.Application", "src\RentCar.Application\RentCar.Application.csproj", "{0A126BED-F696-4B83-8307-E37B607D80CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +22,13 @@ Global
 		{08C49F59-0FCD-4DBE-9FB7-4A3A3253978B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08C49F59-0FCD-4DBE-9FB7-4A3A3253978B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08C49F59-0FCD-4DBE-9FB7-4A3A3253978B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A126BED-F696-4B83-8307-E37B607D80CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A126BED-F696-4B83-8307-E37B607D80CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A126BED-F696-4B83-8307-E37B607D80CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A126BED-F696-4B83-8307-E37B607D80CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{08C49F59-0FCD-4DBE-9FB7-4A3A3253978B} = {9E220435-BCFB-40DC-9707-25D56DB3A470}
+		{0A126BED-F696-4B83-8307-E37B607D80CB} = {9E220435-BCFB-40DC-9707-25D56DB3A470}
 	EndGlobalSection
 EndGlobal
