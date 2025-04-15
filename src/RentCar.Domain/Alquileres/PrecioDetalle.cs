@@ -1,4 +1,4 @@
-using RentCar.Domain.Vehiculos;
+using RentCar.Domain.Shared;
 
 namespace RentCar.Domain.Alquileres;
 

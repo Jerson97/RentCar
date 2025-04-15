@@ -1,4 +1,5 @@
 using RentCar.Domain.Abstractions;
+using RentCar.Domain.Shared;
 
 namespace RentCar.Domain.Vehiculos;
 

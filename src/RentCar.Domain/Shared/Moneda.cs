@@ -1,4 +1,4 @@
-namespace RentCar.Domain.Vehiculos;
+namespace RentCar.Domain.Shared;
 
 public record Moneda(decimal Monto, TipoMoneda TipoMoneda)
 {

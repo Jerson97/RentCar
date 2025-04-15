@@ -1,6 +1,7 @@
 using System.Xml.XPath;
 using RentCar.Domain.Abstractions;
 using RentCar.Domain.Alquileres.Events;
+using RentCar.Domain.Shared;
 using RentCar.Domain.Vehiculos;
 
 namespace RentCar.Domain.Alquileres;
@@ -99,6 +100,20 @@ public sealed class Alquiler : Entity
             Status = AlquilerStatus.Cancelado;
             FechaCancelacion = utcNow;
             RaiseDomainEvent(new AlquilerCanceladoDomainEvent(Id));
+
+            return Result.Success();
+        }
+
+        public Result Completar(DateTime utcNow)
+        {
+            if (Status != AlquilerStatus.Confirmado)
+            {
+                return Result.Failure(AlquilerErrors.NotConfirmed);
+            }
+
+            Status = AlquilerStatus.Completado;
+            FechaCompletado = utcNow;
+            RaiseDomainEvent(new AlquilerCompletadoDomainEvent(Id));
 
             return Result.Success();
         }
