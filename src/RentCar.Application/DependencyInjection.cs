@@ -1,4 +1,6 @@
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
+using RentCar.Application.Abstraction.Behaviors;
 using RentCar.Domain.Alquileres;
 
 namespace RentCar.Application;
@@ -10,7 +12,11 @@ public static class DependencyInjection
         services.AddMediatR(configuration =>
         {
             configuration.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
+            configuration.AddOpenBehavior(typeof(LoggingBehaviors<,>));
+            configuration.AddOpenBehavior(typeof(ValidationBehaviors<,>));
         });
+
+        services.AddValidatorsFromAssembly(typeof(DependencyInjection).Assembly);
 
         services.AddTransient<PrecioService>();
 
