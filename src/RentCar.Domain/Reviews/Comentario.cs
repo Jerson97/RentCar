@@ -1,3 +1,3 @@
 namespace RentCar.Domain.Reviews;
 
-public sealed record Comentario(string value);
+public sealed record Comentario(string Value);
