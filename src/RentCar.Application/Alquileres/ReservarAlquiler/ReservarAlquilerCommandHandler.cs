@@ -1,5 +1,6 @@
 using RentCar.Application.Abstraction.Clock;
 using RentCar.Application.Abstraction.Messaging;
+using RentCar.Application.Exceptions;
 using RentCar.Domain.Abstractions;
 using RentCar.Domain.Alquileres;
 using RentCar.Domain.Users;
@@ -48,7 +49,9 @@ internal sealed class ReservarAlquilerCommandHandler : ICommandHandler<ReservarA
                 return Result.Failure<Guid>(AlquilerErrors.OverLap);
             }
 
-            var alquiler = Alquiler.Reservar(
+            try
+            {
+                var alquiler = Alquiler.Reservar(
                 vehiculo,
                 user.Id,
                 duracion,
@@ -61,5 +64,16 @@ internal sealed class ReservarAlquilerCommandHandler : ICommandHandler<ReservarA
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 
             return alquiler.Id;
+
+            }
+            catch (ConcurrencyException)
+            {
+                
+                return Result.Failure<Guid>(AlquilerErrors.OverLap);
+            }
+
+            
+
+            
     }
 }
