@@ -8,6 +8,10 @@ namespace RentCar.Domain.Alquileres;
 
 public sealed class Alquiler : Entity
 {
+    private Alquiler()
+    {
+        
+    }
         private Alquiler(Guid id, Guid vehiculoId, Guid userId, DateRange duracion, Moneda precioPorPeriodo, 
                         Moneda mantenimiento, Moneda accesorios, Moneda precioTotal, AlquilerStatus status, DateTime fechaCreacion) : base(id)
         {

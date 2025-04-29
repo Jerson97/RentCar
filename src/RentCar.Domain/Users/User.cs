@@ -4,6 +4,10 @@ namespace RentCar.Domain.Abstractions;
 
 public sealed class User : Entity
 {
+    private User()
+    {
+        
+    }
     public User(Guid id, Nombre nombre, Apellido apellido, Email email): base(id) 
     {
         Nombre = nombre;

@@ -1,3 +1,4 @@
+using RentCar.Api.Extensions;
 using RentCar.Application;
 using RentCar.Infrastructure;
 
@@ -20,6 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.ApplyMigration();
 
 app.MapControllers();
 

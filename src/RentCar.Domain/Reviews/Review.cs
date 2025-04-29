@@ -6,6 +6,10 @@ namespace RentCar.Domain.Reviews;
 
 public sealed class Review : Entity
 {
+    private Review()
+    {
+        
+    }
     private Review(Guid id, Guid vehiculoId, Guid alquilerId, Guid userId, Rating rating, Comentario comentario, DateTime? fechaCreacion) : base(id) 
     {
         VehiculoId = vehiculoId;

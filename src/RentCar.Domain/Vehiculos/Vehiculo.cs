@@ -5,6 +5,10 @@ namespace RentCar.Domain.Vehiculos;
 
 public sealed class Vehiculo : Entity
 {
+    private Vehiculo()
+    {
+        
+    }
     public Vehiculo(Guid id, Modelo modelo, Vin vin, Moneda precio, Moneda mantenimiento, DateTime? fechaUltimaAlquiler, List<Accesorio> accesorios, Direccion? direccion) : base(id) 
     { 
         Modelo = modelo;
