@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "myhHmR552oQtbVNF0QgxB5v0QHrXMhLV1NcU1Uc31cw5cQW3D75PXT27qnf89/EXo3wPMAuNwnw/EdluoqoKLA==",
+  "dgSpecHash": "5i5AYY9WW4EhnbEccRdZn8slp5fKsmgOe8PQ6277jwvvisjpnTw7hrMIy/cpJH5QrFzGnrBg7m/tQdG4/5jVtw==",
   "success": true,
   "projectFilePath": "C:\\ProyectosNet2025\\RentCar\\src\\RentCar.Api\\RentCar.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USUARIO\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\efcore.namingconventions\\7.0.2\\efcore.namingconventions.7.0.2.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
