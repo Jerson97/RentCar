@@ -37,20 +37,20 @@ internal sealed class SearchVehiculosQueryHandler : IQueryHandler<SearchVehiculo
                 a.vin as Vin,
                 a.precio_monto as Precio,
                 a.precio_tipo_moneda as TipoMoneda,
-                a.direccion_pais as Pais
+                a.direccion_pais as Pais,
                 a.direccion_departamento as Departamento,
                 a.direccion_provincia as Provincia,
                 a.direccion_ciudad as Ciudad,
-                a.direccion_calle as calle
+                a.direccion_calle as Calle
             FROM vehiculos AS a
             WHERE NOT EXISTS
             (
                 SELECT 1 
-                FROM alquiler AS b
+                FROM alquileres AS b
                 WHERE
-                    b.vehiculo_id = a.id
+                    b.vehiculo_id = a.id AND
                     b.duracion_inicio <= @EndDate AND
-                    b.duracion_final >= @StarDate AND
+                    b.duracion_fin >= @StartDate AND
                     b.status = ANY(@ActiveAlquilerStatuses)
             )
         """;

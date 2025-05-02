@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using RentCar.Api.Middleware;
 using RentCar.Infrastructure;
 
 namespace RentCar.Api.Extensions;
@@ -25,5 +26,10 @@ public static class ApplicationBuilderExtensions
                 
             }
         }
+    }
+
+    public static void UseCustomExceptionHandler(this IApplicationBuilder app)
+    {
+        app.UseMiddleware<ExceptionHandlingMiddleware>();
     }
 }
