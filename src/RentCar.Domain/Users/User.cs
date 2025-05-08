@@ -2,13 +2,13 @@ using RentCar.Domain.Users;
 
 namespace RentCar.Domain.Abstractions;
 
-public sealed class User : Entity
+public sealed class User : Entity<UserId>
 {
     private User()
     {
         
     }
-    public User(Guid id, Nombre nombre, Apellido apellido, Email email): base(id) 
+    public User(UserId id, Nombre nombre, Apellido apellido, Email email): base(id) 
     {
         Nombre = nombre;
         Apellido = apellido;
@@ -21,8 +21,8 @@ public sealed class User : Entity
 
     public static User Create(Nombre nombre, Apellido apellido, Email email)
     {
-        var user = new User(Guid.NewGuid(), nombre, apellido, email);
-        user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id));
+        var user = new User(UserId.New(), nombre, apellido, email);
+        user.RaiseDomainEvent(new UserCreatedDomainEvent(user.Id!));
         return user;
     }
 }

@@ -13,7 +13,7 @@ public class PrecioService
 
         decimal porcentageChange = 0;
 
-        foreach (var accesorio in vehiculo.Accesorios)
+        foreach (var accesorio in vehiculo.Accesorios!)
         {
             porcentageChange += accesorio switch
             {

@@ -3,13 +3,13 @@ using RentCar.Domain.Shared;
 
 namespace RentCar.Domain.Vehiculos;
 
-public sealed class Vehiculo : Entity
+public sealed class Vehiculo : Entity<VehiculoId>
 {
     private Vehiculo()
     {
         
     }
-    public Vehiculo(Guid id, Modelo modelo, Vin vin, Moneda precio, Moneda mantenimiento, DateTime? fechaUltimaAlquiler, List<Accesorio> accesorios, Direccion? direccion) : base(id) 
+    public Vehiculo(VehiculoId id, Modelo modelo, Vin vin, Moneda precio, Moneda mantenimiento, DateTime? fechaUltimaAlquiler, List<Accesorio> accesorios, Direccion? direccion) : base(id) 
     { 
         Modelo = modelo;
         Vin = vin;
@@ -27,6 +27,6 @@ public sealed class Vehiculo : Entity
     public Moneda? Precio { get; private set; }
     public Moneda? Mantenimiento { get; private set; }
     public DateTime? FechaUltimaAlquiler { get; internal set; }
-    public List<Accesorio> Accesorios { get; private set; }
+    public List<Accesorio>? Accesorios { get; private set; }
 }
 

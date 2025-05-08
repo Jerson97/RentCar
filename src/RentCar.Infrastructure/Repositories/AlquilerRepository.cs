@@ -5,7 +5,7 @@ using RentCar.Infrastructure.Repositories;
 
 namespace RentCar.Infrastructure.Repositories;
 
-internal sealed class AlquilerRepository : Repository<Alquiler>, IAlquilerRepository
+internal sealed class AlquilerRepository : Repository<Alquiler, AlquilerId>, IAlquilerRepository
 {
     private static readonly AlquilerStatus[] ActiveAlquilerStatuses = {
         AlquilerStatus.Reservado,
